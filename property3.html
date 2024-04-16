@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Listing</title>
+    <link rel="stylesheet" type="text/css" href="styles/property3.css" >
+<!-- Name: Sohan Adhikari, Student Number: 301399033 -->
+
+</head>
+<body>
+    <div class="property-listing">
+        <h1>Property 3</h1>
+        <div id="imageContainer">
+  <img id="rotatingImage" src="picture/property3.png" alt="Image 1">
+</div>
+
+<script>
+  var images = ["picture/property3.png","picture/3pic.png","picture/3pic3.png","picture/3pic4.png","picture/3pic5.png"]; 
+  var currentIndex = 0;
+
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById("rotatingImage").src = images[currentIndex];
+  }
+
+  setInterval(changeImage, 2150);
+</script>
+        <p>Price:$500,000 thousands</p>
+        <p>Address:Lilian Drive,Scarborough</p>
+        <p>Lot Size:2000 sq.feet</p>
+        <p>Number and Type of Rooms:2BHk</p>
+        
+    </div>
+		<a href="pricing.html">Back</a>
+	<a href="home.html">Back to Agent Page</a>
+
+</body>
+<footer> 
+ &copy; Sohan Adhikari (301399033) Software Engineering Technician 1st sem project
+  </footer>
+</html>

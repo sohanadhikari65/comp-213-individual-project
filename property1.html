@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Listing</title>
+    <link rel="stylesheet" type="text/css" href="styles/property1.css" >
+	
+
+	<!-- Name: Sohan Adhikari, Student Number: 301399033 -->
+
+</head>
+<body>
+    <div class="property-listing">
+        <h1>Property 1</h1>
+		
+		<div id="imageContainer">
+  <img id="rotatingImage" src="picture/property1.png" alt="Image 1">
+</div>
+
+<script>
+  var images = ["picture/property1.png","picture/1pic.png","picture/1pic1.png","picture/1pic2.png"]; 
+  var currentIndex = 0;
+
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById("rotatingImage").src = images[currentIndex];
+  }
+
+  setInterval(changeImage, 2150);
+</script>
+		
+        <p>Price:1.2 Million</p>
+        <p>Address:Yonges Street,Toronto</p>
+        <p>Lot Size:8800 sq.feet</p>
+        <p>Number and Type of Rooms:6BHk</p>
+        
+    </div>
+ <a href="pricing.html">Back</a>
+	<a href="home.html">Back to Agent Page</a>
+	
+</body>
+<footer> 
+ &copy; Sohan Adhikari (301399033) Software Engineering Technician 1st sem project
+  </footer>
+</html>
